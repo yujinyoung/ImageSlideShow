@@ -3,8 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kr.hs.emirim.dbwlsdud0407.imageslideshhow.MainActivity">
+    tools:context="kr.hs.emirim.dbwlsdud0407.imageslideshhow.MainActivity"
+    android:orientation="vertical">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"></LinearLayout>
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/but_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_text_start"/>
+    <Button
+        android:id="@+id/but_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_text_stop"/>
+</LinearLayout>
+    <ViewFlipper
+        android:id="@+id/but_flip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ViewFlipper>
 </LinearLayout>
